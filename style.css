@@ -39,26 +39,33 @@ button {
   width: 40px;
   height: 40px;
   border-radius: 50%;
+  background-color: #ff3e79;
+  background-repeat: no-repeat;
 }
 
 .btn__close {
-  background-image: url("./images/burgerLeft.svg");
+  background-image: url("./images/cross.svg");
+  background-position: center;
 }
 
 .btn__search {
   background-image: url("./images/search.svg");
+  background-position: center;
 }
 
 .btn__chat {
-  background-image: url("./images/search.svg");
+  background-image: url("./images/phone.svg");
+  background-position: center;
 }
 
 .btn__chat2 {
   background-image: url("./images/chat.svg");
+  background-position: center;
 }
 
 .btn__profile {
   background-image: url("./images/profile.svg");
+  background-position: center;
 }
 
 .header__listItemLogo {
@@ -66,24 +73,25 @@ button {
 }
 
 .main {
-  width: 320px;
   height: 650px;
 }
 
 .main__section {
   margin-bottom: 268px;
-  margin-left: 6px;
 }
 
 .main__list {
-  padding-top: 55px;
+  margin-top: 55px;
 }
 
 .main__listItem {
   list-style: none;
   line-height: 40px;
   font-size: 16px;
-  padding-left: 28px;
+}
+
+.main__link {
+  transition: 3s;
 }
 
 .main__link:hover {
@@ -102,7 +110,6 @@ a {
 }
 
 .footer__section {
-  width: 320px;
   height: 226px;
 }
 
