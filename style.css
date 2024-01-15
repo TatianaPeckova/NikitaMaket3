@@ -1,0 +1,143 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url("../Nikita2/fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans";
+}
+
+.wrapper {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  overflow: scroll;
+  width: 320px;
+  padding: 34px 22px 34px;
+  box-shadow: 0px 16px 52px rgba(14, 24, 80, 0.2);
+}
+
+button {
+  border: none;
+}
+
+.header__list {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.btn__close {
+  background-image: url("./images/burgerLeft.svg");
+}
+
+.btn__search {
+  background-image: url("./images/search.svg");
+}
+
+.btn__chat {
+  background-image: url("./images/search.svg");
+}
+
+.btn__chat2 {
+  background-image: url("./images/chat.svg");
+}
+
+.btn__profile {
+  background-image: url("./images/profile.svg");
+}
+
+.header__listItemLogo {
+  flex-grow: 1;
+}
+
+.main {
+  width: 320px;
+  height: 650px;
+}
+
+.main__section {
+  margin-bottom: 268px;
+  margin-left: 6px;
+}
+
+.main__list {
+  padding-top: 55px;
+}
+
+.main__listItem {
+  list-style: none;
+  line-height: 40px;
+  font-size: 16px;
+  padding-left: 28px;
+}
+
+.main__link:hover {
+  color: #7e7e82;
+  cursor: pointer;
+}
+
+.footer__languages:hover {
+  color: #7e7e82;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: #1b1c21;
+}
+
+.footer__section {
+  width: 320px;
+  height: 226px;
+}
+
+.footer__contacts {
+  display: flex;
+  margin-top: 0px;
+  margin-bottom: 25px;
+  margin-left: 34px;
+}
+
+.footerItemList {
+  display: flex;
+  list-style: none;
+  padding-right: 11px;
+}
+
+.footer__boxCont {
+  margin-left: 34px;
+  margin-bottom: 46px;
+}
+
+.footer__mail {
+  padding-bottom: 22px;
+}
+
+.footer__phone {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.footer__boxLang {
+  display: flex;
+  margin-left: 34px;
+}
+
+.footer__languages {
+  padding-right: 8px;
+}
