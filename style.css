@@ -41,6 +41,12 @@ button {
   border-radius: 50%;
   background-color: #ff3e79;
   background-repeat: no-repeat;
+  transition: 1s;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: red;
 }
 
 .btn__close {
@@ -88,10 +94,7 @@ button {
   list-style: none;
   line-height: 40px;
   font-size: 16px;
-}
-
-.main__link {
-  transition: 3s;
+  transition: 0.6s;
 }
 
 .main__link:hover {
@@ -147,4 +150,5 @@ a {
 
 .footer__languages {
   padding-right: 8px;
+  transition: 0.6s;
 }
