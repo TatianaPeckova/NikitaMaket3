@@ -1,0 +1,529 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  display: block;
+  width: max-content;
+  height: 40px;
+  background-color: none;
+  transition: 1s;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
+
+/*header*/
+
+.header-section {
+  max-width: 320px;
+  max-height: 83px;
+  margin: 0px auto;
+}
+
+.header__list {
+  display: flex;
+  margin-right: 20px;
+  margin-left: 19px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  justify-content: space-between;
+}
+
+.header__listItem {
+  list-style-type: none;
+}
+
+.btnLogo {
+  position: relative;
+}
+
+.btnLogo::after {
+  content: "";
+  background: rgb(234, 234, 234);
+  width: 2px;
+  height: 32px;
+  right: -17px;
+  top: -30px;
+  position: absolute;
+}
+
+.img {
+  width: 40px;
+  height: 40px;
+}
+
+.logo {
+  width: 96.55px;
+  height: 50.81px;
+}
+
+.main__paragrafPrices {
+  margin-top: 44px;
+  color: #1b1c21;
+  line-height: 20px;
+}
+
+.main__btnPrices {
+  color: #1b1c21;
+  width: 100%;
+  text-align: start;
+  line-height: 24px;
+  position: relative;
+}
+
+.main__btnPrices::after {
+  content: url("/images/Line.svg");
+  width: 24px;
+  height: 24px;
+  display: block;
+  position: absolute;
+  left: 90px;
+  bottom: -9px;
+}
+
+.main__btnDiv {
+  margin-top: 24px;
+  width: 192px;
+  height: 55px;
+}
+
+.footer__paragraf {
+  margin-top: 34px;
+  color: #7e7e82;
+  text-align: center;
+}
+
+img[hidden] {
+  display: none;
+  @media (min-width: 321px) {
+    display: flex;
+  }
+  @media (min-width: 769px) {
+    display: none;
+  }
+}
+
+*[hidden] {
+  display: none;
+  @media (min-width: 769px) {
+    display: flex;
+  }
+}
+
+@media (min-width: 321px) {
+  .header-section {
+    max-width: 769px;
+    max-height: 88px;
+    margin: 0px auto;
+  }
+
+  .log {
+    margin-right: 248px;
+  }
+  .btnLogo::after {
+    display: none;
+  }
+
+  .btnBurger {
+    position: relative;
+  }
+
+  .btnBurger::after {
+    content: "";
+    background: rgb(234, 234, 234);
+    width: 2px;
+    height: 32px;
+    right: -14px;
+
+    top: -20px;
+    position: absolute;
+  }
+
+  .btnTools {
+    position: relative;
+  }
+
+  .btnTools::after {
+    content: "";
+    background: rgb(234, 234, 234);
+    width: 2px;
+    height: 32px;
+    right: -14px;
+    top: -20px;
+    position: absolute;
+  }
+}
+
+@media (min-width: 769px) {
+  .header-section {
+    max-width: 1120px;
+    max-height: 130px;
+    margin: 0px auto;
+  }
+
+  .header__navigation {
+    margin-right: 30px;
+    margin-left: 33px;
+  }
+
+  .btnBurger::after {
+    display: none;
+  }
+
+  .btnTools::after {
+    display: none;
+  }
+
+  .header__list {
+    display: none;
+  }
+
+  .header__list--hidden {
+    margin-top: 20px;
+    margin-left: 54px;
+    margin-right: 54px;
+    justify-content: space-between;
+  }
+  .header__list2--hidden {
+    margin-left: 54px;
+    font-size: 16px;
+  }
+
+  .header__listItem--hidden,
+  .header__listItem2--hidden {
+    list-style-type: none;
+  }
+
+  .header__listItem2--hidden {
+    margin-top: 34px;
+  }
+
+  .btnHidden {
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+  }
+
+  .ServicesHidden {
+    font-size: 28px;
+    color: black;
+    margin-top: 52px;
+  }
+
+  .hiddenLink {
+    text-decoration: none;
+    font-size: 16px;
+    color: rgba(126, 126, 130, 1);
+  }
+
+  .hiddenLink:hover {
+    border: solid;
+    border-color: rgb(184, 255, 236);
+    border-radius: 2px;
+    border-width: 2px;
+  }
+
+  .hiddenMainDiv {
+    justify-content: flex-end;
+    margin-top: -35px;
+    gap: 30px;
+  }
+
+  .div1,
+  .div2 {
+    align-self: center;
+    margin-right: 10px;
+  }
+}
+
+/*main*/
+
+.main {
+  max-width: 320px;
+  max-height: 509px;
+  margin: 0px auto;
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.Services {
+  font-size: 28px;
+}
+
+.main__divParagraf {
+  margin-top: 64px;
+}
+
+.flipText {
+  padding-left: 24px;
+  position: relative;
+  width: 132px;
+  height: 24px;
+  border: none;
+  background: transparent;
+}
+.main__flipText {
+  margin-top: 26px;
+}
+
+.flipText::before {
+  content: url("./imgMobile/expand.svg");
+  width: 24px;
+  height: 24px;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.main__navigation {
+  margin-top: 34px;
+  width: 100%;
+  height: 40px;
+}
+
+.main__list--visible {
+  display: flex;
+  overflow: scroll;
+}
+
+/*@media (min-width: 1100px) {
+  .main__list--visible {
+    overflow-x: hidden;
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+}*/
+
+.main__listItem--visible {
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.visibleLink:hover {
+  border: solid;
+  border-color: rgb(184, 255, 236);
+  border-radius: 2px;
+  border-width: 2px;
+}
+
+.main__divPic {
+  background-image: url("/imgMobile/PictureCPS.jpg");
+  height: 176px;
+  width: 100%;
+  margin-top: 22px;
+}
+
+@media (min-width: 321px) {
+  .main {
+    max-width: 769px;
+    max-height: 416px;
+    margin: 0px auto;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main__list--visible {
+    overflow-x: hidden;
+    display: flex;
+    overflow: scroll;
+  }
+
+  .main__list--visible {
+    gap: 34px;
+  }
+
+  .visibleLink {
+    width: 158px;
+    height: 40px;
+  }
+  .main__section {
+    max-width: 769px;
+  }
+  .main__sectionDiv {
+    display: flex;
+  }
+
+  .main__divPic {
+    background-image: url("/imgMobile/PictureCPS.jpg");
+    padding-top: 0px;
+    margin-left: 0px;
+    height: 307px;
+    width: 100%;
+    background-size: cover;
+  }
+
+  .main__flipText {
+    position: absolute;
+    width: 132;
+    height: 24;
+    align-self: end;
+    /* padding-top: 20px; почему не срабатывает?*/
+
+    padding-left: 16px;
+  }
+
+  .flipText {
+    position: relative;
+    width: 132px;
+    height: 24px;
+    border: none;
+    background: transparent;
+    padding-top: 20px;
+  }
+
+  .flipText::before {
+    content: url("./imgMobile/expand.svg");
+    width: 24px;
+    height: 24px;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding-top: 16px;
+    /*border: solid;
+    border-color: white;
+    border-radius: 2px;*/
+  }
+
+  .main__divParagraf {
+    margin-top: 19px;
+  }
+
+  .hiddenText {
+    font-size: 14px;
+    display: block;
+
+    padding-left: 34px;
+  }
+
+  .main__paragraf {
+    display: none;
+  }
+
+  .hiddenPart {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .main {
+    max-width: 1120px;
+    max-height: 130px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 4px;
+  }
+
+  .Services {
+    display: none;
+  }
+
+  .main__listItem--visible {
+    margin-left: 31px;
+  }
+  .main__navigation {
+    max-width: 100%;
+    margin-top: 16px;
+    height: auto;
+  }
+
+  .main__list--visible {
+    max-width: 100%;
+    flex-wrap: wrap;
+    gap: 0px;
+  }
+
+  .visibleLink1 {
+    width: 158px;
+    height: 40px;
+  }
+
+  .visibleLink2 {
+    width: 220px;
+    height: 40px;
+  }
+
+  .visibleLink3 {
+    width: 152px;
+    height: 40px;
+  }
+
+  .visibleLink4 {
+    width: 191px;
+    height: 40px;
+  }
+
+  .visibleLink5 {
+    width: 100px;
+    height: 40px;
+    margin-left: 0px;
+  }
+  .main__section {
+    max-width: 1120px;
+  }
+
+  .main__sectionDiv {
+    display: flex;
+  }
+
+  .main__divPic {
+    background-image: url("/imgMobile/PictureCPS.jpg");
+    margin-top: -8px;
+    margin-left: 0px;
+    height: 307px;
+    width: 100%;
+    background-size: cover;
+  }
+
+  .main__divParagraf {
+    margin-top: 8px;
+    width: 490px;
+    height: 160px;
+  }
+
+  .hiddenText {
+    font-size: 14px;
+    display: block;
+
+    padding-left: 34px;
+  }
+
+  .main__paragraf {
+    display: none;
+  }
+
+  .main__flipText {
+    position: absolute;
+    width: 132;
+    height: 24;
+    align-self: end;
+    /* padding-top: 20px; почему не срабатывает?*/
+    padding-left: 34px;
+  }
+
+  .flipText {
+    position: relative;
+    width: 132px;
+    height: 24px;
+    border: none;
+    background: transparent;
+    padding-top: 20px;
+  }
+  .flipText::before {
+    content: url("./imgMobile/expand.svg");
+    width: 24px;
+    height: 24px;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding-top: 16px;
+  }
+}

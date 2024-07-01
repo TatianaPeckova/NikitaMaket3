@@ -120,7 +120,6 @@ a {
   display: flex;
   margin-top: 0px;
   margin-bottom: 25px;
-  margin-left: 34px;
 }
 
 .footerItemList {
@@ -130,7 +129,6 @@ a {
 }
 
 .footer__boxCont {
-  margin-left: 34px;
   margin-bottom: 46px;
 }
 
@@ -145,7 +143,6 @@ a {
 
 .footer__boxLang {
   display: flex;
-  margin-left: 34px;
 }
 
 .footer__languages {
